@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <DetectImage msg="¿Tu cachorro se ha unido al lado oscuro?"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DetectImage from './components/DetectImage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DetectImage
   }
 }
 </script>
