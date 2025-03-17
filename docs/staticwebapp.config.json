@@ -1,0 +1,18 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*", "/models/*"]
+  },
+  "mimeTypes": {
+    ".json": "text/json",
+    ".bin": "application/octet-stream"
+  },
+  "routes": [
+    {
+      "route": "/models/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=86400"
+      }
+    }
+  ]
+}
