@@ -43,8 +43,9 @@ jobs:
           action: "upload"
           app_location: "/" # App source code path
           api_location: "" # API source code path - leave blank if no API
-          output_location: "docs" # Built app content directory - relative to app_location
+          output_location: "docs" # Built app content directory
           skip_app_build: true # Skip build as we've already built the app
+          skip_deploy_on_missing_secrets: true # Continue the run without deployment if token is missing
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -57,3 +58,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
+          skip_deploy_on_missing_secrets: true # Continue the run without deployment if token is missing
