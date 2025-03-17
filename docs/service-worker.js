@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ewok-o-cachorro/precache-manifest.24cc807bf7fcdb28bc2c9fc66051f782.js"
+  "/precache-manifest.19a84af2097661c4e23c0d30063eefae.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ewok-o-cachorro"});
