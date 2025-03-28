@@ -1,4 +1,5 @@
 # ewok-o-cachorro
+This is an app that uses AI to predict whether a photo is an ewok or a puppy.
 
 ## Project setup
 ```
